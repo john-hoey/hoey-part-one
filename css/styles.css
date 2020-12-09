@@ -8,8 +8,8 @@ body {
 
 nav {
     background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
+   /* display: flex;
+    flex-direction: column; */
 }
 
 nav ul {
@@ -24,12 +24,13 @@ nav ul {
 
 }
 nav ul li {
-    display: flex;
+   /* display: flex; */
     margin: 4px 0;
     padding: 0;
+    flex: auto;
 }
 nav ul li a {
-    display:flex;
+    /*display:flex;*/
     font-size: 11px;
     font-weight: bold;
     color: black;
@@ -57,6 +58,7 @@ span.orange {
     padding: 12px;
     border-radius: 10px;
     background-color: #20a8b4;
+    
     
 }
 .btn a {
@@ -94,11 +96,14 @@ div.contentright {
     nav ul {
      
         flex-direction: row;
+        align-items: center;
+    
     }
+
     nav ul li.list {
-        display: flex;
         justify-content: flex-end;
        }
+    
     nav ul li.logo{
         justify-content: flex-start;
     }
