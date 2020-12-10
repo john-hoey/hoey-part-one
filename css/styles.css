@@ -44,36 +44,46 @@
 .navigation a:hover {
   color: #ff5c0f;
 }
+
 .btn {
   display: flex;
-  margin: 0 0.25em;
   padding: 12px;
   border-radius: 10px;
   background-color: #20a8b4;
-  height: 20px;
 }
-.btn a {
+a.btn,
+.btn a,
+a.btn2,
+.btn2 a {
   color: white;
   text-decoration: none;
   align-self: center;
+  padding: 12px;
+  border-radius: 10px;
 }
 .btn:hover {
   background-color: #ff5c0f;
+}
+a.btn:hover {
   color: white;
 }
+.btn2 {
+  width: 96%;
+}
 .content {
-  margin: 60px 1em;
+  margin: 60px 0 0 0;
   padding: 15px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .contentleft {
-  margin: 0 10;
+  margin: 0 0 0 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: left;
+  width: 100%;
 }
 .contentright {
   display: none;
@@ -98,6 +108,11 @@
   .btn2 {
     width: 6em;
   }
+  a.btn2 {
+    align-self: flex-start;
+    justify-content: center;
+  }
+
   .contentleft {
     flex: 2;
   }
