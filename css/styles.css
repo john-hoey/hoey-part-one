@@ -117,7 +117,7 @@ a.btn:hover {
     flex: 2;
   }
   .contentright {
-    margin-right: 0.5em;
+    margin-right: 2.5em;
     display: flex;
     flex: 1;
     justify-content: flex-start;
